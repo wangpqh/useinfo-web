@@ -15,9 +15,11 @@ public class UserDaoImpl implements UserDao {
     public void createConn() {
         //连接数据库
         String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://172.16.0.191:3306/test";//此ip地址为数据库服务器ip非本机ip
+//        String url = "jdbc:mysql://172.16.0.191:3306/test";//此ip地址为数据库服务器ip非本机ip
+        String url = "jdbc:mysql://172.16.0.37:3306/mine";
         String username = "root";
-        String password = "xianwei";
+//        String password = "xianwei";
+        String password = "123456";
         try {
             Class.forName(JDBC_DRIVER);//加载驱动
 
